@@ -1,0 +1,12 @@
+server:
+ port: 8761
+
+eureka:
+ instance:
+    hostname: eureka9001
+ client:
+    serviceUrl:
+      defaultZone: https://eureka9002/eureka/,https://eureka9003/eureka/
+
+      
+

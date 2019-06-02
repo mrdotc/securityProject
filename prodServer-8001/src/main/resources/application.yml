@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active:
+     defualt
+  application:
+    name: prodservice
+    
+server:
+  port: 8001
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+     defaultzone: http://eureka9001:8761/eureka/,http://eureka9002:8762/eureka/,http://eureka9002:8763/eureka/
